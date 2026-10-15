@@ -53,10 +53,11 @@ tr.click{cursor:pointer}tr.click:hover td{background:#243247}tr.tot td{font-weig
 .dq .qq{font-weight:600}.dq .ans{font-size:.92rem;margin-top:4px}.dq details{margin-top:6px;font-size:.92rem}.dq summary{cursor:pointer;color:var(--acc)}
 .dq details .bg h3{font-size:.9rem}
 @media(max-width:480px){.card{padding:18px}h1{font-size:1.5rem}.q{font-size:1.05rem}}
-.gterm{background:none;border:1px solid #38bdf8;color:#38bdf8;border-radius:6px;padding:1px 7px;font-weight:700;cursor:pointer;font:inherit;font-weight:700}.gterm:hover{background:#0c2a44}.gterm.off{border-color:#475569;color:#94a3b8;cursor:default}.gcnt{color:#94a3b8;font-size:.85em}.gcnt.none{font-style:italic}.gvid{margin:4px 0 2px 0;font-size:.9em}.gtag{background:#3b0764;color:#e9d5ff}#gbackTop{margin-bottom:10px}
+.gterm{background:none;border:1px solid #38bdf8;color:#38bdf8;border-radius:6px;padding:1px 7px;font-weight:700;cursor:pointer;font:inherit;font-weight:700}.gterm:hover{background:#0c2a44}.gterm.off{border-color:#475569;color:#94a3b8;cursor:default}.gcnt{color:#94a3b8;font-size:.85em}.gcnt.none{font-style:italic}.gvid{margin:4px 0 2px 0;font-size:.9em}.gtag{background:#3b0764;color:#e9d5ff}.phead{display:flex;justify-content:space-between;align-items:center;gap:8px 12px;flex-wrap:nowrap;margin:8px 0 10px}.phead h1{margin:0;flex:1 1 auto;min-width:0;overflow-wrap:anywhere}.phead>button{flex:0 0 auto;margin:0 0 0 auto;max-width:45%;white-space:normal}
 .vgrp{margin:18px 0 6px;font-size:1.05rem;color:#38bdf8;border-bottom:1px solid #334155;padding-bottom:4px}.vi{padding:10px 0;border-bottom:1px solid #1e293b}.vi a{color:#38bdf8;font-weight:600;text-decoration:none}.vi a:hover{text-decoration:underline}.vmeta{color:#94a3b8;font-size:.85em;margin:2px 0}.vdesc{margin:4px 0}.vtags .tag{margin:2px 4px 2px 0;display:inline-block}.vtags .tag.pt{background:#0c4a6e;color:#e0f2fe}.vterms{color:#94a3b8;font-size:.85em}
 a.link{display:inline-block;text-decoration:none}.clink{display:block;padding:14px 16px;margin:10px 0;border:1px solid #334155;border-radius:10px;text-decoration:none;color:var(--txt);background:#0f172a}.clink:hover{border-color:#38bdf8}.clink b{color:#38bdf8;font-size:1.05rem}.clink .mut{display:block;margin-top:4px;font-size:.9em}
-#cbody h1{margin-top:12px}#cbody h2{color:#38bdf8;margin-top:26px;border-bottom:1px solid #334155;padding-bottom:4px}#cbody p{line-height:1.6}.cfig{margin:14px 0;padding:10px;background:#0f172a;border:1px solid #1e293b;border-radius:10px}.cfig img{max-width:100%;height:auto;border-radius:6px;display:block;margin:0 auto}.cfig svg{max-width:100%;height:auto;display:block;margin:0 auto}.cfig figcaption{margin-top:6px;font-size:.92em}.cfig .attr{color:#94a3b8;font-size:.78em;margin-top:3px}.cfig .attr a{color:#94a3b8}.kfbox{margin:12px 0;padding:10px 14px;background:#0b1e33;border-left:3px solid #38bdf8;border-radius:6px}.kfbox h3{margin:2px 0 6px;color:#7dd3fc;font-size:1rem}.kfbox li{margin:5px 0;line-height:1.5}.ctoc{margin:8px 0 4px;padding-left:20px}.ctoc a{color:#38bdf8;text-decoration:none}
+.ttsbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0;padding:8px 10px;background:#0b1e33;border:1px solid #1e3a5f;border-radius:8px}.ttsbar .tts-st{color:#94a3b8;font-size:.88em}.ttsnote{color:#fbbf24;font-size:.88em}.tts-cur{background:rgba(56,189,248,.14);outline:2px solid rgba(56,189,248,.5);border-radius:4px}
+#cbody h1{margin-top:12px}#cbody .phead h1{margin:0}#cbody h2{color:#38bdf8;margin-top:26px;border-bottom:1px solid #334155;padding-bottom:4px}#cbody p{line-height:1.6}.cfig{margin:14px 0;padding:10px;background:#0f172a;border:1px solid #1e293b;border-radius:10px}.cfig img{max-width:100%;height:auto;border-radius:6px;display:block;margin:0 auto}.cfig svg{max-width:100%;height:auto;display:block;margin:0 auto}.cfig figcaption{margin-top:6px;font-size:.92em}.cfig .attr{color:#94a3b8;font-size:.78em;margin-top:3px}.cfig .attr a{color:#94a3b8}.kfbox{margin:12px 0;padding:10px 14px;background:#0b1e33;border-left:3px solid #38bdf8;border-radius:6px}.kfbox h3{margin:2px 0 6px;color:#7dd3fc;font-size:1rem}.kfbox li{margin:5px 0;line-height:1.5}.ctoc{margin:8px 0 4px;padding-left:20px}.ctoc a{color:#38bdf8;text-decoration:none}
 </style>
 </head>
 <body>
@@ -90,9 +91,9 @@ a.link{display:inline-block;text-decoration:none}.clink{display:block;padding:14
   <div id="fb" class="fb hidden"></div>
   <button class="primary hidden" id="nextBtn"></button>
  </section>
-  <section id="gloss" class="hidden"><button class="primary back" id="gbackTop" data-i="back"></button><h1 data-i="gloss"></h1><p class="mut" data-i="glossHint"></p><input id="gq"><div id="glist"></div><button class="primary back" data-i="back"></button></section>
- <section id="vids" class="hidden"><button class="primary back" id="vbackTop" data-i="back"></button><h1 data-i="videos"></h1><p class="mut" data-i="vidsHint"></p><input id="vq" type="search"><p id="vcnt" class="mut"></p><div id="vlist"></div><button class="primary back" id="vbackBottom" data-i="back"></button></section>
- <section id="courses" class="hidden"><button class="primary cback" id="cbackTop" data-i="back"></button><h1 data-i="courses"></h1><p class="mut" data-i="coursesHint"></p><div id="clist"></div><button class="primary cback" id="cbackBottom" data-i="back"></button></section>
+  <section id="gloss" class="hidden"><div class="phead"><h1 data-i="gloss"></h1><button class="primary back" id="gbackTop" data-i="back"></button></div><p class="mut" data-i="glossHint"></p><input id="gq"><div id="glist"></div><button class="primary back" data-i="back"></button></section>
+ <section id="vids" class="hidden"><div class="phead"><h1 data-i="videos"></h1><button class="primary back" id="vbackTop" data-i="back"></button></div><p class="mut" data-i="vidsHint"></p><input id="vq" type="search"><p id="vcnt" class="mut"></p><div id="vlist"></div><button class="primary back" id="vbackBottom" data-i="back"></button></section>
+ <section id="courses" class="hidden"><div class="phead"><h1 data-i="courses"></h1><button class="primary cback" id="cbackTop" data-i="back"></button></div><p class="mut" data-i="coursesHint"></p><div id="clist"></div><button class="primary cback" id="cbackBottom" data-i="back"></button></section>
  <section id="course" class="hidden"><button class="primary coback" id="cobackTop" data-i="backCourses"></button><div id="cbody"></div><button class="primary coback" id="cobackBottom" data-i="backCourses"></button></section>
  <section id="drill" class="hidden"><h1 id="dtitle"></h1><p id="dsum" class="mut"></p><div id="dlist"></div><button class="primary" id="dback" data-i="backsum"></button></section>
  <section id="end" class="hidden">
@@ -126,7 +127,7 @@ function applyLang(){document.documentElement.lang=LANG;document.title=T("title"
   $("gq").placeholder=T("search"); $("vq").placeholder=T("vsearch"); if(!$("vids").classList.contains("hidden")) renderVids(); if(!$("courses").classList.contains("hidden")) renderCourses(); if(!$("course").classList.contains("hidden")) route();
   document.querySelectorAll("[data-lang]").forEach(b=>b.classList.toggle("on",b.dataset.lang===LANG));
   renderFilters();}
-function setLang(l){LANG=l;try{localStorage.setItem("dctLang",l);}catch(e){}applyLang();}
+function setLang(l){ttsStop();LANG=l;try{localStorage.setItem("dctLang",l);}catch(e){}applyLang();}
 const $ = id => document.getElementById(id);
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 
@@ -151,21 +152,53 @@ function abbrList(found){const order=[...found].filter(k=>GLOSS[k]).sort((a,b)=>
   if(!order.length){const p=document.createElement("div");p.textContent=T("noabbr");box.appendChild(p);}
   order.forEach(k=>{const d=document.createElement("div");const b=document.createElement("b");b.textContent=k;d.appendChild(b);d.appendChild(document.createTextNode(": "+GLOSS[k][0]+" – "+GLOSS[k][LANG==="en"?2:1]));box.appendChild(d);});
   return box;}
-function view(id){["start","quiz","end","gloss","drill","vids","courses","course"].forEach(s=>$(s).classList.toggle("hidden",s!==id));window.scrollTo(0,0);}
+
+const TTSL={fi:{play:"▶ Kuuntele kurssi",pause:"⏸ Tauko",resume:"▶ Jatka",stop:"■ Lopeta",reading:"Luetaan…",paused:"Tauolla",done:"Valmis",nosup:"Selaimesi ei tue puhesynteesiä, joten ääneenluku ei ole käytettävissä. Kokeile Chromea, Edgeä tai Safaria.",novoice:"Laitteeltasi ei löytynyt suomenkielistä puheääntä. Asenna suomen kielen puheääni käyttöjärjestelmän asetuksista (esim. Windows: Asetukset → Aika ja kieli → Puhe) ja lataa sivu uudelleen."},
+ en:{play:"▶ Read aloud",pause:"⏸ Pause",resume:"▶ Resume",stop:"■ Stop",reading:"Reading…",paused:"Paused",done:"Finished",nosup:"Your browser does not support speech synthesis, so read-aloud is unavailable. Try Chrome, Edge or Safari.",novoice:"No English voice was found on this device. Install an English speech voice in your system settings and reload the page."}};
+const TTS={q:[],i:0,on:false,paused:false,gen:0,cur:null};
+function ttsT(k){return (TTSL[LANG]||TTSL.en)[k];}
+function ttsVoice(){if(!("speechSynthesis" in window))return null;const vs=speechSynthesis.getVoices();const pref=LANG==="fi"?["fi-FI","fi"]:["en-US","en-GB","en"];
+  for(const p of pref){const m=vs.filter(v=>(v.lang||"").replace("_","-").toLowerCase().startsWith(p.toLowerCase()));if(m.length){return m.find(v=>/natural|neural|online|google/i.test(v.name))||m.find(v=>v.localService)||m[0];}}return null;}
+function ttsChunks(t){t=t.replace(/\s+/g," ").trim();if(!t)return[];const out=[];
+  t.split(/(?<=[.!?…:;])\s+(?=[A-ZÄÖÅ0-9"“(])/).forEach(s=>{while(s.length>220){let k=s.lastIndexOf(", ",220);if(k<80)k=s.lastIndexOf(" ",220);if(k<1)k=220;out.push(s.slice(0,k+1).trim());s=s.slice(k+1).trim();}if(s)out.push(s);});return out;}
+function ttsCollect(){const q=[];document.querySelectorAll("#cbody [data-rd]").forEach(e=>{let t=e.textContent;if(/^H[123]$/.test(e.tagName)&&!/[.!?:]$/.test(t))t+=".";ttsChunks(t).forEach(c=>q.push({t:c,e}));});return q;}
+function ttsUI(){const b=$("ttsPlay");if(!b)return;b.textContent=!TTS.on?ttsT("play"):TTS.paused?ttsT("resume"):ttsT("pause");$("ttsStop").disabled=!TTS.on;$("ttsSt").textContent=!TTS.on?"":TTS.paused?ttsT("paused"):ttsT("reading");}
+function ttsMark(e){if(TTS.cur===e)return;if(TTS.cur)TTS.cur.classList.remove("tts-cur");TTS.cur=e;if(e){e.classList.add("tts-cur");const r=e.getBoundingClientRect();if(r.top<60||r.bottom>innerHeight-40)e.scrollIntoView({behavior:"smooth",block:"center"});}}
+function ttsSpeak(){const g=TTS.gen;if(!TTS.on||g!==TTS.gen)return;if(TTS.i>=TTS.q.length){ttsStop();const st=$("ttsSt");if(st)st.textContent=ttsT("done");return;}
+  const it=TTS.q[TTS.i];ttsMark(it.e);const u=new SpeechSynthesisUtterance(it.t);u.lang=LANG==="fi"?"fi-FI":(TTS.voice&&/en-GB/i.test(TTS.voice.lang)?"en-GB":"en-US");if(TTS.voice)u.voice=TTS.voice;u.rate=1;
+  u.onend=()=>{if(g!==TTS.gen)return;TTS.i++;ttsSpeak();};u.onerror=ev=>{if(g!==TTS.gen||ev.error==="interrupted"||ev.error==="canceled")return;TTS.i++;ttsSpeak();};
+  TTS.u=u;speechSynthesis.speak(u);}
+function ttsStop(){TTS.gen++;TTS.on=false;TTS.paused=false;TTS.q=[];TTS.i=0;try{if("speechSynthesis" in window)speechSynthesis.cancel();}catch(e){}ttsMark(null);ttsUI();}
+function ttsToggle(){if(!("speechSynthesis" in window))return;
+  if(!TTS.on){TTS.voice=ttsVoice();if(!TTS.voice&&speechSynthesis.getVoices().length){$("ttsNote").textContent=ttsT("novoice");$("ttsNote").classList.remove("hidden");return;}
+    TTS.q=ttsCollect();TTS.i=0;TTS.on=true;TTS.paused=false;TTS.gen++;speechSynthesis.cancel();ttsSpeak();}
+  else if(TTS.paused){TTS.paused=false;TTS.gen++;speechSynthesis.cancel();ttsSpeak();} /* restart current chunk: avoids Chrome resume bugs */
+  else{TTS.paused=true;TTS.gen++;speechSynthesis.cancel();}
+  ttsUI();}
+function ttsBar(){const d=document.createElement("div");d.className="ttsbar";d.id="ttsBar";
+  const n=document.createElement("div");n.className="ttsnote hidden";n.id="ttsNote";
+  if(!("speechSynthesis" in window)||!window.SpeechSynthesisUtterance){n.textContent=ttsT("nosup");n.classList.remove("hidden");d.appendChild(n);return d;}
+  const p=document.createElement("button");p.className="link";p.id="ttsPlay";p.onclick=ttsToggle;const s=document.createElement("button");s.className="link";s.id="ttsStop";s.textContent=ttsT("stop");s.onclick=()=>{ttsStop();};
+  const st=document.createElement("span");st.className="tts-st";st.id="ttsSt";d.append(p,s,st,n);
+  const chk=()=>{const vs=speechSynthesis.getVoices();if(vs.length&&!ttsVoice()){n.textContent=ttsT("novoice");n.classList.remove("hidden");}};
+  setTimeout(()=>{chk();ttsUI();},0);speechSynthesis.addEventListener&&speechSynthesis.addEventListener("voiceschanged",chk);return d;}
+if(typeof window!=="undefined")window.addEventListener("pagehide",()=>ttsStop());
+
+function view(id){if(id!=="course")ttsStop();["start","quiz","end","gloss","drill","vids","courses","course"].forEach(s=>$(s).classList.toggle("hidden",s!==id));window.scrollTo(0,0);}
 function renderCourses(){const L=$("clist");L.innerHTML="";
   COURSES.forEach(c=>{const a=document.createElement("a");a.className="clink";a.href="#course/"+c.id;a.dataset.id=c.id;const b=document.createElement("b");b.textContent=LBL(c.topic);a.appendChild(b);
     const s=document.createElement("span");s.className="mut";s.textContent=T("courseMeta").replace("{s}",c.S.length).replace("{v}",VLIST.filter(v=>v.topics.includes(c.topic)).length);a.appendChild(s);L.appendChild(a);});}
-function renderCourse(id){const c=COURSES.find(x=>x.id===id); if(!c) return false; const B=$("cbody"); B.innerHTML=""; const seen=new Set(), found=new Set(), X=s=>expand(s,seen,found).replace(/\(([^()\s]+) \(([^()]*)\)\)/g,"($1 – $2)");
+function renderCourse(id){ttsStop();const c=COURSES.find(x=>x.id===id); if(!c) return false; const B=$("cbody"); $("course").insertBefore($("cobackTop"),B); B.innerHTML=""; const seen=new Set(), found=new Set(), X=s=>expand(s,seen,found).replace(/\(([^()\s]+) \(([^()]*)\)\)/g,"($1 – $2)");
   const el=(tag,cls,txt)=>{const e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e;};
-  B.appendChild(el("span","tag",T("courseTag"))); B.appendChild(el("h1",null,LBL(c.topic)));
-  B.appendChild(el("p",null,X(c[LANG+"_intro"])));
+  B.appendChild(el("span","tag",T("courseTag"))); const h1=el("h1",null,LBL(c.topic));h1.dataset.rd=1;const ph=el("div","phead");ph.appendChild(h1);ph.appendChild($("cobackTop"));B.appendChild(ph);B.appendChild(ttsBar());
+  {const ip=el("p",null,X(c[LANG+"_intro"]));ip.dataset.rd=1;B.appendChild(ip);}
   const toc=el("ol","ctoc"); c.S.forEach((s,i)=>{const li=el("li"); const a=el("a",null,s[LANG+"_h"]); a.href="#course/"+c.id; a.onclick=e=>{e.preventDefault(); const h=document.getElementById("csec-"+i); if(h) h.scrollIntoView({behavior:"smooth"});}; li.appendChild(a); toc.appendChild(li);}); B.appendChild(toc);
-  c.S.forEach((s,i)=>{const h=el("h2",null,s[LANG+"_h"]); h.id="csec-"+i; B.appendChild(h);
-    s[LANG].forEach(p=>B.appendChild(el("p",null,X(p))));
-    const kfl=(s.kf&&s.kf[LANG])||[]; if(kfl.length){ const box=el("div","kfbox"); box.appendChild(el("h3",null,T("keyFacts"))); const ul=el("ul"); kfl.forEach(t=>ul.appendChild(el("li",null,X(t)))); box.appendChild(ul); B.appendChild(box); }
+  c.S.forEach((s,i)=>{const h=el("h2",null,s[LANG+"_h"]); h.id="csec-"+i; h.dataset.rd=1; B.appendChild(h);
+    s[LANG].forEach(p=>{const pe=el("p",null,X(p));pe.dataset.rd=1;B.appendChild(pe);});
+    const kfl=(s.kf&&s.kf[LANG])||[]; if(kfl.length){ const box=el("div","kfbox"); {const h3=el("h3",null,T("keyFacts"));h3.dataset.rd=1;box.appendChild(h3);} const ul=el("ul"); kfl.forEach(t=>{const li=el("li",null,X(t));li.dataset.rd=1;ul.appendChild(li);}); box.appendChild(ul); B.appendChild(box); }
     s.figs.forEach(f=>{const fg=el("figure","cfig");
-      if(f.t==="svg"){ const d=el("div"); d.innerHTML=SV(f.k); fg.appendChild(d); fg.appendChild(el("figcaption",null,f[LANG])); }
-      else { const p=CPHOTOS[f.k]; const im=document.createElement("img"); im.src=p.src; im.alt=p[LANG]; fg.appendChild(im); fg.appendChild(el("figcaption",null,p[LANG]));
+      if(f.t==="svg"){ const d=el("div"); d.innerHTML=SV(f.k); fg.appendChild(d); {const fc=el("figcaption",null,f[LANG]);fc.dataset.rd=1;fg.appendChild(fc);} }
+      else { const p=CPHOTOS[f.k]; const im=document.createElement("img"); im.src=p.src; im.alt=p[LANG]; fg.appendChild(im); {const fc=el("figcaption",null,p[LANG]);fc.dataset.rd=1;fg.appendChild(fc);}
         const at=el("div","attr"); at.appendChild(document.createTextNode(T("photoBy")+" ")); const a1=el("a",null,p.author||p.title); a1.href=p.url; a1.target="_blank"; a1.rel="noopener noreferrer"; at.appendChild(a1);
         at.appendChild(document.createTextNode(", Wikimedia Commons, ")); const a2=el("a",null,p.license); if(p.licurl){a2.href=p.licurl;a2.target="_blank";a2.rel="noopener noreferrer";} at.appendChild(a2); fg.appendChild(at); }
       B.appendChild(fg);});});
